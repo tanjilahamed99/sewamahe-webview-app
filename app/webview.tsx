@@ -1,18 +1,15 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import { WebView } from 'react-native-webview';
-import { StatusBar } from 'expo-status-bar';
 
-export default function RootLayout() {
+export default function WebViewScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <WebView
-        source={{ uri: 'https://sawamahe-frontend.vercel.app' }} // <-- replace with your URL
+        source={{ uri: 'https://sawamahe-frontend.vercel.app' }} // replace with your web app URL
         javaScriptEnabled
         domStorageEnabled
-        startInLoadingState
       />
-      <StatusBar style="auto" />
     </SafeAreaView>
   );
 }
