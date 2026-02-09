@@ -6,7 +6,7 @@ export default function WebViewScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <WebView
-        source={{ uri: 'https://sawamahe-frontend.vercel.app' }} // replace with your web app URL
+        source={{ uri: 'https://sawamahe-frontend.vercel.app' }} // replace with your web app UR
         javaScriptEnabled
         domStorageEnabled
       />
